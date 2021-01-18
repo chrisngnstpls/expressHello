@@ -1,0 +1,31 @@
+{
+  "name": "middlewareexercise",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisngnstpls/expressHello.git"
+  },
+  "keywords": [
+    "express",
+    "js",
+    "hello",
+    "world"
+  ],
+  "author": "c.anagnostopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisngnstpls/expressHello/issues"
+  },
+  "homepage": "https://github.com/chrisngnstpls/expressHello#readme"
+}
