@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-const path = require('path');
 const logger = require('./middle/logger.js')
 
 /*
@@ -20,14 +19,10 @@ app.get('/', (req, res) => {
 })
 */
 
+// Calling the console logger middleware located
 app.use(logger);
-
-app.use(express.json());
-
-app.use(express.urlencoded({extended:false}));
-
+//Calling the routing path for '/'
 app.use('/', require('./routes/routes'))
-
 
 
 app.listen(port, () => {
