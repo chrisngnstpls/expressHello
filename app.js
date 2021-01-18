@@ -1,7 +1,7 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 const port = process.env.PORT || 3000
-const logger = require('./middle/logger.js')
+const logger = require('./middle/logger.js');
 
 /*
 Initial exercise
@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
 // Calling the console logger middleware located
 app.use(logger);
 //Calling the routing path for '/'
-app.use('/', require('./routes/routes'))
+app.use('/', require('./routes/routes'));
 
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-})
+});
